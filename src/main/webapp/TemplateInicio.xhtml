@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="./css/default.css"/>
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200" rel="stylesheet"></link> 
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One" rel="stylesheet"></link>
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="top" >
+            <div id="logo">
+                <ul>
+                    <li id="logoimg">       
+                        <a  href="#">M<img src="images/discos-compactos1.png" />re music</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="item-uno">       
+                        <a href="#" >Ingresar <img class="img" src="images/iniciar-sesion2.png" /></a>
+                    </li>
+                    <li id="item-dos">
+                        <a href="#">Ver Carrito <img class="img" src="images/orden.png" /></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">
+                <h>Universidad de Cundinamarca</h><br></br>
+                <h>Linea de profundización</h><br></br>
+                <h>Ruby Dayana Cárdenas - Andrés Felipe Gómez</h>
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
